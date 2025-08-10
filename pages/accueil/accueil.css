@@ -1,0 +1,129 @@
+html{
+    color: rgba(131, 77, 145, 1);
+}
+body{
+    margin: 0;
+    font-family: arial, sans-serif;    
+    background-color: rgba(246, 241, 231, 1);
+    font-size: 1em;
+}
+h1{
+    font-size: 8em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.navbar{
+    background: linear-gradient(0deg,rgba(131, 77, 145, 1),rgba(77, 51, 123, 1));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 2em;
+    /* height: 300px; */
+}
+
+.logo img{
+    height: 100%;   /* prend toute la hauteur disponible de la navbar */
+    max-height: 200px;
+    width: auto;    /* garde ses proportions */
+    object-fit: contain; /* évite d'étirer l'image */
+}
+
+.nav-links{
+    display: flex; /* rend les <li> horizontaux */
+    list-style: none;
+    gap: 1em;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+  color: #ffd700; /* jaune doré */
+  text-decoration: underline;
+}
+
+/* ------------------barre de recherche------------------ */
+
+.searchbarre{
+display: flex;
+justify-content: center;
+}
+
+#searchbarre{
+    background-color: rgba(246, 241, 231, 1);
+    border-radius: 5px;
+    border-color: rgba(131, 77, 145, 1);
+    border-style: solid;
+    height: 2em;
+    width: 30em;
+    padding: 0.5em;
+    margin: 1em;
+    font-size: 1em;
+}
+
+/* ------------------hero------------------ */
+
+.hero{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.trilist {
+    padding: 0.5em;
+    border-radius: 8px;
+    width: 20%;
+}
+/* ------------------a voir------------------- */
+.trilist ul {
+    background-color: rgba(246, 241, 231, 1);
+    border-color: rgba(131, 77, 145, 1);
+    border-style: solid;
+    border-radius: 8px;
+}
+
+.trilist a{
+    color: rgba(131, 77, 145, 1);
+    padding: 0.2em;
+}
+/* ------------------a voir------------------- */
+.photoshero {
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+.photoshero img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+/* ------------------responsive------------------- */
+
+@media (max-width:768px) {
+    .hero{flex-direction: column;
+    }
+    .trilist{
+        width: 100%;
+    }
+    .photoshero{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width:480px){
+    .photoshero{
+        grid-template-columns: 1fr;
+    }
+}
