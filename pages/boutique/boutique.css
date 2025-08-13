@@ -1,0 +1,42 @@
+html{
+    color: rgba(131, 77, 145, 1);
+}
+body{
+    margin: 0;
+    font-family: arial, sans-serif;    
+    background-color: rgba(246, 241, 231, 1);
+    font-size: 1em;
+}
+/* -------------------------navbar--------------------- */
+.navbar{
+    background: linear-gradient(0deg,rgba(131, 77, 145, 1),rgba(181, 152, 236, 1));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 2em;
+}
+
+.logo img{
+    height: 100%;   /* prend toute la hauteur disponible de la navbar */
+    max-height: 80px;
+    width: auto;    /* garde ses proportions */
+    object-fit: contain; /* évite d'étirer l'image */
+}
+
+.nav-links{
+    display: flex; /* rend les <li> horizontaux */
+    list-style: none;
+    gap: 1em;
+}
+
+.nav-links a{
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+}
+
+.navbar a:hover{
+  color: #ffd700;
+  text-decoration: none;
+}

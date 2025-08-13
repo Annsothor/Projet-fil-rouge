@@ -14,20 +14,19 @@ h1{
     align-items: center;
 }
 
-
+/* -------------------------navbar--------------------- */
 .navbar{
-    background: linear-gradient(0deg,rgba(131, 77, 145, 1),rgba(77, 51, 123, 1));
+    background: linear-gradient(0deg,rgba(131, 77, 145, 1),rgba(181, 152, 236, 1));
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
     font-size: 2em;
-    /* height: 300px; */
 }
 
 .logo img{
     height: 100%;   /* prend toute la hauteur disponible de la navbar */
-    max-height: 200px;
+    max-height: 100px;
     width: auto;    /* garde ses proportions */
     object-fit: contain; /* évite d'étirer l'image */
 }
@@ -45,8 +44,8 @@ h1{
 }
 
 .navbar a:hover{
-  color: #ffd700; /* jaune doré */
-  text-decoration: underline;
+  color: #ffd700;
+  text-decoration: none;
 }
 
 /* ------------------barre de recherche------------------ */
@@ -98,7 +97,7 @@ justify-content: center;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 1em;
-    padding: 1em;
+    padding: 1em;    
 }
 
 .photoshero img{
