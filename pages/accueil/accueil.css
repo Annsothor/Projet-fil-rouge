@@ -8,7 +8,7 @@ body{
     font-size: 1em;
 }
 h1{
-    font-size: 8em;
+    font-size: 6em;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,12 +21,12 @@ h1{
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .logo img{
     height: 100%;   /* prend toute la hauteur disponible de la navbar */
-    max-height: 100px;
+    max-height: 50px;
     width: auto;    /* garde ses proportions */
     object-fit: contain; /* évite d'étirer l'image */
 }

@@ -14,12 +14,12 @@ body{
     justify-content: space-between;
     align-items: center;
     padding: 0.5em 1em;
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .logo img{
     height: 100%;   /* prend toute la hauteur disponible de la navbar */
-    max-height: 80px;
+    max-height: 50px;
     width: auto;    /* garde ses proportions */
     object-fit: contain; /* évite d'étirer l'image */
 }
@@ -39,4 +39,35 @@ body{
 .navbar a:hover{
   color: #ffd700;
   text-decoration: none;
+}
+
+/* --------------------------catégories---------------------- */
+
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.catalogue {
+    flex-direction:  1;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1em;
+    padding: 1em;   
+    margin: 0 auto;
+    width: 60%;
+}
+
+.catalogue img{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+}
+
+.catalogue img:hover{
+    border-color: rgba(131, 77, 145, 1);
+    border-style: solid;
 }
