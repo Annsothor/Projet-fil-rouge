@@ -15,37 +15,41 @@ h1{
 }
 
 /* -------------------------navbar--------------------- */
-.navbar{
-    background: linear-gradient(0deg,rgba(131, 77, 145, 1),rgba(181, 152, 236, 1));
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 1em;
-    font-size: 1em;
+.navbar {
+  background: linear-gradient(0deg, rgba(131, 77, 145, 1), rgba(181, 152, 236, 1));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  flex-wrap: wrap;
 }
 
-.logo img{
-    height: 100%;   /* prend toute la hauteur disponible de la navbar */
-    max-height: 50px;
-    width: auto;    /* garde ses proportions */
-    object-fit: contain; /* évite d'étirer l'image */
+.logo img {
+  height: 100%;
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
-.nav-links{
-    display: flex; /* rend les <li> horizontaux */
-    list-style: none;
-    gap: 1em;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
-}
-
-.navbar a:hover{
-  color: #ffd700;
+.nav-links a {
   text-decoration: none;
+  color: white;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ffd700;
 }
 
 /* ------------------barre de recherche------------------ */

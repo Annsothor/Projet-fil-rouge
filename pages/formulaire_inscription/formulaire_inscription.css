@@ -1,0 +1,116 @@
+/* === Base === */
+body {
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f6f1e7;
+  font-family: Arial, sans-serif;
+  color: #834d91;
+}
+
+/* === Neumorphique === */
+.neumorphic {
+  background: #f6f1e7;
+  border-radius: 20px;
+  box-shadow: 8px 8px 16px #d9d3c8,
+              -8px -8px 16px #ffffff;
+}
+
+/* === Carte centrale === */
+.neumorphic-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 350px;
+  max-width: 90%;
+  text-align: center;
+}
+
+/* Titre */
+.neumorphic-card h1 {
+  margin-bottom: 20px;
+  font-size: 22px;
+  color: #834d91;
+}
+
+/* === Champs === */
+.neumorphic-input {
+  border: none;
+  outline: none;
+  padding: 12px;
+  margin: 10px 0;
+  width: 80%;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #834d91;
+  background: #f6f1e7;
+  box-shadow: inset 5px 5px 10px #d9d3c8,
+              inset -5px -5px 10px #ffffff;
+}
+
+/* === Bouton === */
+.neumorphic-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+  color: #ffffff;
+  background: #b598ec;
+  box-shadow: 5px 5px 10px #9c82d0,
+              -5px -5px 10px #d4bef7;
+  transition: all 0.2s ease;
+}
+
+.neumorphic-button:hover {
+  box-shadow: inset 5px 5px 10px #9c82d0,
+              inset -5px -5px 10px #d4bef7;
+}
+
+/* === Lien connexion === */
+.link-text {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.link-text a {
+  color: #834d91;
+  text-decoration: none;
+}
+
+.link-text a:hover {
+  text-decoration: underline;
+}
+
+/* === Responsive tablette et mobile === */
+@media (max-width: 768px) {
+  .neumorphic-card {
+    width: 90%;
+    padding: 20px;
+  }
+  .neumorphic-input {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .neumorphic-card {
+    padding: 15px;
+  }
+  .neumorphic-card h1 {
+    font-size: 18px;
+  }
+  .neumorphic-input {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .neumorphic-button {
+    font-size: 14px;
+    padding: 10px 16px;
+  }
+}

@@ -1,73 +1,127 @@
-html{
-    color: rgba(131, 77, 145, 1);
-}
-body{
-    margin: 0;
-    font-family: arial, sans-serif;    
-    background-color: rgba(246, 241, 231, 1);
-    font-size: 1em;
-}
-/* -------------------------navbar--------------------- */
-.navbar{
-    background: linear-gradient(0deg,rgba(131, 77, 145, 1),rgba(181, 152, 236, 1));
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0.5em 1em;
-    font-size: 1em;
+html {
+  color: rgba(131, 77, 145, 1);
 }
 
-.logo img{
-    height: 100%;   /* prend toute la hauteur disponible de la navbar */
-    max-height: 50px;
-    width: auto;    /* garde ses proportions */
-    object-fit: contain; /* évite d'étirer l'image */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgba(246, 241, 231, 1);
+  font-size: 1em;
 }
 
-.nav-links{
-    display: flex; /* rend les <li> horizontaux */
-    list-style: none;
-    gap: 1em;
+/* ------------------------- NAVBAR --------------------- */
+.navbar {
+  background: linear-gradient(0deg, rgba(131, 77, 145, 1), rgba(181, 152, 236, 1));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5em 1em;
+  font-size: 1em;
+  flex-wrap: wrap;
 }
 
-.nav-links a{
-    text-decoration: none;
-    color: white;
-    transition: color 0.3s;
+.logo img {
+  height: 100%;
+  max-height: 50px;
+  width: auto;
+  object-fit: contain;
 }
 
-.navbar a:hover{
-  color: #ffd700;
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1em;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
   text-decoration: none;
+  color: white;
+  transition: color 0.3s;
 }
 
-/* --------------------------catégories---------------------- */
+.navbar a:hover {
+  color: #ffd700;
+}
 
-.hero{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* -------------------------- CATEGORIES ---------------------- */
+.categories {
+  padding: 1em;
+  text-align: center;
 }
 
 .catalogue {
-    flex-direction:  1;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Toujours 4 colonnes sur grand écran */
+  gap: 1em;
+  padding: 1em;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1400px;
+}
+
+.catalogue img {
+  width: 100%;
+  height: 200px; /* images plus grandes sur desktop */
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 2px solid transparent;
+}
+
+.catalogue img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  border-color: rgba(131, 77, 145, 1);
+}
+
+/* -------------------------- RESPONSIVE ---------------------- */
+@media (max-width: 992px) {
+  .catalogue {
+    grid-template-columns: repeat(3, 1fr); /* Tablette : 3 colonnes */
+  }
+  .catalogue img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-wrap: wrap;
+  }
+
+  .nav-links {
     display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 1em;
-    padding: 1em;   
-    margin: 0 auto;
-    width: 60%;
-}
-
-.catalogue img{
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.5em;
     width: 100%;
-    height: auto;
-    object-fit: cover;
-    display: block;
-    border-radius: 8px;
+    margin-top: 0.5em;
+  }
+
+  .nav-links li {
+    text-align: center;
+  }
+
+  .catalogue {
+    grid-template-columns: repeat(2, 1fr); /* Mobile paysage : 2 colonnes */
+  }
+  .catalogue img {
+    height: 150px;
+  }
 }
 
-.catalogue img:hover{
-    border-color: rgba(131, 77, 145, 1);
-    border-style: solid;
+@media (max-width: 480px) {
+  .nav-links {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .catalogue {
+    grid-template-columns: 1fr; /* Mobile portrait : 1 colonne */
+  }
+  .catalogue img {
+    height: 130px;
+  }
 }
