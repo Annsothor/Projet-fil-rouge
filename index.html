@@ -5,64 +5,111 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jihème Philatélie</title>
     <link rel="stylesheet" href="pages/accueil/accueil.css">
-    {# test logo dans l'adresse  #}
-    <link rel="website icone" type="png" href="asset/images/logojm.png"
 </head>
 <body>
-    <div class="navbar">
+    <!-- navBar -->
+    <nav class="navbar">
         <div class="logo">
-            <img src="/assets/images/logojm.png" alt="Logo">
+            <img src="assets/images/logojm.png" alt="Logo Jihème Philatélie">
         </div>
-    <ul class="nav-links">
-        <li><a href="/index.html" aria-label="Aller à la page Accueil">Accueil</a></li>
-        <li><a href="/pages/boutique/boutique.html" aria-label="Accéder à la boutique en ligne">Boutique</a></li>
-        <li><a href="/pages/contact/contact.html" aria-label="Aller à la page Contact">Contact</a></li>
-        <li><a href="/pages/formulaire_connexion/formulaire_connexion.html" aria-label="connexion">connexion</a></li>
-        <li><a href="/pages/favoris/favoris.html" aria-label="Aller à la page Favoris">Favoris</a></li>
-    </ul>
-       </div>
-<div class="searchbarre">
-<input type="search" id="searchbarre">
+        <ul class="nav-links">
+            <li><a href="index.html" aria-label="Aller à la page Accueil">Accueil</a></li>
+            <li><a href="pages/boutique/boutique.html" aria-label="Accéder à la boutique en ligne">Boutique</a></li>
+            <li><a href="pages/contact/contact.html" aria-label="Aller à la page Contact">Contact</a></li>
+            <li><a href="pages/formulaire_connexion/formulaire_connexion.html" aria-label="Se connecter">Connexion</a></li>
+            <li><a href="pages/favoris/favoris.html" aria-label="Aller à la page Favoris">Favoris</a></li>
+        </ul>
+    </nav>
 
-</div>
-<div class="header">
-    <h1>COUCOU Marcus</h1> 
-        <div class="hero">
-            <div class="trilist">
-<ul>
-<li><a href="pays 1" alt="lien vers pays1">Pays 1</a></li>
-<li><a href="pays 2" alt="lien vers pays2">Pays 2</a></li>
-<li><a href="pays 3" alt="lien vers pays3">Pays 3</a></li>
-<li><a href="pays 4" alt="lien vers pays4">Pays 4</a></li>
-<li><a href="pays 5" alt="lien vers pays5">Pays 5</a></li>
-<li><a href="pays 6" alt="lien vers pays6">Pays 6</a></li>
-<li><a href="pays 7" alt="lien vers pays7">Pays 7</a></li>
-<li><a href="pays 8" alt="lien vers pays8">Pays 8</a></li>
-<li><a href="pays 9" alt="lien vers pays9">Pays 9</a></li>
-<li><a href="pays 10" alt="lien vers pays10">Pays 10</a></li>
-<li><a href="pays 11" alt="lien vers pays11">Pays 11</a></li>
-</ul>
-            </div>
-            <div class="photoshero">
-                <img src="assets/images/timbres/france/test1.jpg" alt="image timbre">
-                <img src="assets/images/timbres/france/test2.jpg" alt="image timbre">
-                <img src="assets/images/timbres/france/test3.jpg" alt="image timbre">
-                <img src="assets/images/timbres/france/test4.jpg" alt="image timbre">
-                <img src="assets/images/timbres/france/test5.jpg" alt="image timbre">
-                <img src="assets/images/timbres/france/test6.jpg" alt="image timbre">
-                <img src="assets/images/couverture_boutique/couvertureafriquefranq.jpg" alt="image de couverture afrique francophone">
-            </div>
+    <!-- searchBarre -->
+    <form class="search-form" role="search">
+        <div class="searchbarre">
+            <label for="searchbarre" class="sr-only">Rechercher</label>
+            <input 
+                type="search" 
+                id="searchbarre" 
+                name="search"
+                placeholder="Rechercher..." 
+                aria-label="Champ de recherche"
+                autocomplete="off"
+            >
+            <button type="submit" aria-label="Lancer la recherche">
+                <span>🔍</span>
+            </button>
         </div>
-    
-    <H2>Hello World !!</H2>
-</div>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-    
+    </form>
+
+    <!-- carrousel -->
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="carousel-track">
+                <div class="carousel-item"><img src="assets/images/timbres/france/test1.jpg" alt="Timbre de France"></div>
+                <div class="carousel-item"><img src="assets/images/timbres/france/test2.jpg" alt="Timbre de France"></div>
+                <div class="carousel-item"><img src="assets/images/timbres/france/test6.jpg" alt="Timbre de France"></div>
+                <div class="carousel-item"><img src="assets/images/timbres/france/test4.jpg" alt="Timbre de France"></div>
+                <div class="carousel-item"><img src="assets/images/timbres/france/test5.jpg" alt="Timbre de France"></div>
+            </div>
+            
+            <!-- Contrôles de navigation -->
+            <button class="carousel-btn carousel-btn-prev" aria-label="Image précédente">‹</button>
+            <button class="carousel-btn carousel-btn-next" aria-label="Image suivante">›</button>
+            
+            <!-- Bouton play/pause -->
+            <button class="carousel-play-pause" aria-label="Lecture/Pause">
+                <span class="play-icon">▶</span>
+                <span class="pause-icon">⏸</span>
+            </button>
+        </div>
+        
+        <!-- Indicateurs dots -->
+        <div class="carousel-dots"></div>
+    </div>
+
+    <!-- Contenu principal -->
+    <main class="main-content">
+        <header class="header">
+            <h1>Bienvenue chez Jihème Philatélie</h1> 
+            <section class="hero">
+                <aside class="trilist">
+                    <h3>Nos Collections</h3>
+                    <ul>
+                        <li><a href="#pays1">France</a></li>
+                        <li><a href="#pays2">Allemagne</a></li>
+                        <li><a href="#pays3">Espagne</a></li>
+                        <li><a href="#pays4">Italie</a></li>
+                        <li><a href="#pays5">Belgique</a></li>
+                        <li><a href="#pays6">Suisse</a></li>
+                        <li><a href="#pays7">Monaco</a></li>
+                        <li><a href="#pays8">Luxembourg</a></li>
+                        <li><a href="#pays9">Portugal</a></li>
+                        <li><a href="#pays10">Pays-Bas</a></li>
+                        <li><a href="#pays11">Autriche</a></li>
+                    </ul>
+                </aside>
+                <div class="photoshero">
+                    <img src="assets/images/timbres/france/test1.jpg" alt="Timbre français vintage">
+                    <img src="assets/images/timbres/france/test2.jpg" alt="Timbre français commémoratif">
+                    <img src="assets/images/timbres/france/test3.jpg" alt="Timbre français classique">
+                    <img src="assets/images/timbres/france/test4.jpg" alt="Timbre français moderne">
+                    <img src="assets/images/timbres/france/test5.jpg" alt="Timbre français rare">
+                    <img src="assets/images/timbres/france/test6.jpg" alt="Timbre français collection">
+                    <img src="assets/images/couverture_boutique/couvertureafriquefranq.jpg" alt="Collection Afrique francophone">
+                </div>
+            </section>
+        </header>
+        
+        <section class="content">
+            <h2>À propos de notre passion</h2>
+            <p>Découvrez l'univers fascinant de la philatélie avec notre collection exceptionnelle de timbres du monde entier. Chaque timbre raconte une histoire, témoigne d'une époque et représente un morceau de patrimoine culturel.</p>
+            
+            <p>Notre expertise s'étend sur plusieurs décennies de passion pour les timbres-poste. Nous proposons une sélection rigoureuse de timbres rares, de collections thématiques et d'ensembles complets pour tous les collectionneurs, du débutant au plus expérimenté.</p>
+            
+            <p>Que vous recherchiez des timbres français classiques, des émissions commémoratives européennes, ou des pièces rares d'Afrique francophone, notre boutique saura répondre à vos attentes les plus exigeantes.</p>
+            
+            <p>Explorez nos différentes catégories, consultez nos conseils d'expert, et laissez-vous guider dans cette merveilleuse aventure qu'est la collection de timbres-poste.</p>
+        </section>
+    </main>
+
+    <script src="pages/accueil/accueil.js"></script>
 </body>
-    </html>
+</html>
