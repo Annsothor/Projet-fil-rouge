@@ -147,171 +147,6 @@ h3 {
     border: 0;
 }
 
-/* Carrousel */
-.carousel-container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 3rem auto;
-}
-
-.carousel {
-    position: relative;
-    overflow: hidden;
-    border-radius: 12px;
-    border: 3px solid var(--secondary-color);
-    background: var(--background-color);
-    margin-bottom: 20px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
-}
-
-.carousel-track {
-    display: flex;
-    gap: 10px;
-    transition: transform 0.3s ease-out;
-}
-
-.carousel-item {
-    flex: 0 0 calc((100% - 20px) / 3);
-    height: 250px;
-    background: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: var(--border-radius);
-    overflow: hidden;
-    position: relative;
-}
-
-.carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform var(--transition);
-}
-
-.carousel-item:hover img {
-    transform: scale(1.05);
-}
-
-/* Boutons de navigation du carrousel */
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(181, 152, 236, 0.9);
-    color: white;
-    border: none;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    font-size: 24px;
-    cursor: pointer;
-    z-index: 10;
-    transition: all var(--transition);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-btn:hover {
-    background: var(--secondary-color);
-    transform: translateY(-50%) scale(1.1);
-}
-
-.carousel-btn-prev { left: 10px; }
-.carousel-btn-next { right: 10px; }
-
-.carousel-play-pause {
-    position: absolute;
-    top: 15px;
-    right: 15px;
-    background: rgba(181, 152, 236, 0.9);
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    font-size: 14px;
-    cursor: pointer;
-    z-index: 10;
-    transition: all var(--transition);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.carousel-play-pause:hover {
-    background: var(--secondary-color);
-    transform: scale(1.1);
-}
-
-.carousel-play-pause .pause-icon { display: none; }
-.carousel-play-pause.paused .play-icon { display: none; }
-.carousel-play-pause.paused .pause-icon { display: inline; }
-
-/* Indicateurs dots */
-.carousel-dots {
-    display: flex;
-    justify-content: center;
-    gap: 8px;
-    margin: 20px 0;
-    flex-wrap: wrap;
-}
-
-.carousel-dot {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    background: rgba(181, 152, 236, 0.4);
-    cursor: pointer;
-    transition: all var(--transition);
-    border: 2px solid transparent;
-}
-
-.carousel-dot:hover {
-    background: rgba(181, 152, 236, 0.7);
-    transform: scale(1.2);
-}
-
-.carousel-dot.active {
-    background: var(--secondary-color);
-    transform: scale(1.3);
-    box-shadow: 0 0 10px rgba(181, 152, 236, 0.5);
-}
-
-/* Contrôles de vitesse */
-.carousel-controls {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    padding: 15px;
-    background: rgba(181, 152, 236, 0.1);
-    border-radius: var(--border-radius);
-    margin-top: 10px;
-}
-
-.carousel-controls label {
-    color: var(--secondary-color);
-    font-weight: bold;
-}
-
-.speed-slider {
-    width: 150px;
-    height: 6px;
-    border-radius: 3px;
-    background: rgba(181, 152, 236, 0.3);
-    outline: none;
-    cursor: pointer;
-}
-
-.speed-display {
-    color: var(--secondary-color);
-    font-weight: bold;
-    min-width: 40px;
-    text-align: center;
-}
-
 /* Contenu principal */
 .main-content {
     max-width: 1200px;
@@ -424,42 +259,14 @@ h3 {
         grid-template-columns: repeat(2, 1fr);
     }
     
-    .carousel-item {
-        flex: 0 0 calc((100% - 10px) / 2);
-    }
-    
-    .carousel-btn {
-        width: 40px;
-        height: 40px;
-        font-size: 20px;
+    .content {
+        padding: 1rem;
     }
 }
 
 @media (max-width: 600px) {
     .photoshero {
         grid-template-columns: 1fr;
-    }
-    
-    .carousel-item {
-        flex: 0 0 100%;
-        height: 200px;
-    }
-    
-    .carousel-btn {
-        width: 35px;
-        height: 35px;
-        font-size: 18px;
-    }
-    
-    .carousel-btn-prev { left: 5px; }
-    .carousel-btn-next { right: 5px; }
-    
-    .carousel-play-pause {
-        width: 35px;
-        height: 35px;
-        top: 10px;
-        right: 10px;
-        font-size: 12px;
     }
     
     .content {

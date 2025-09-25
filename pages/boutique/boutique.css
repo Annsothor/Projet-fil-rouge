@@ -65,13 +65,12 @@ body {
 
 .catalogue img {
   width: 100%;
-  height: 200px; /* images plus grandes sur desktop */
+  aspect-ratio: 1 / 1; /* ou 1 / 1 pour carré, 16 / 9 pour paysage */
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   border: 2px solid transparent;
 }
-
 .catalogue img:hover {
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
@@ -109,7 +108,7 @@ body {
     grid-template-columns: repeat(2, 1fr); /* Mobile paysage : 2 colonnes */
   }
   .catalogue img {
-    height: 150px;
+    aspect-ratio: 1 / 1; /* carré en mobile */
   }
 }
 
