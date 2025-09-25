@@ -1,7 +1,7 @@
 /* Variables CSS pour une meilleure maintenance */
 :root {
-    --primary-color: rgb(131, 77, 145);
-    --secondary-color: rgb(181, 152, 236);
+    --primary-color: rgb(181, 152, 236);
+    --secondary-color: rgb(131, 77, 145);
     --background-color: rgb(246, 241, 231);
     --text-color: rgb(131, 77, 145);
     --border-radius: 8px;
@@ -21,7 +21,7 @@ html {
 }
 
 body {
-    font-family: Arial, sans-serif;    
+    font-family: 'Roboto', sans-serif;    
     background-color: var(--background-color);
     font-size: 1rem;
     line-height: 1.6;
@@ -29,6 +29,7 @@ body {
 
 /* Typographie */
 h1 {
+    font-family: 'Merriweather', serif;
     font-size: 4rem;
     text-align: center;
     margin: 2rem 0;
