@@ -1,9 +1,9 @@
-/* Variables CSS pour une meilleure maintenance */
+
 :root {
-    --primary-color: rgb(181, 152, 236);
-    --secondary-color: rgb(131, 77, 145);
-    --background-color: rgb(246, 241, 231);
-    --text-color: rgb(131, 77, 145);
+    --primary-color: #1f77b4;      /* Bleu vif accessible */
+    --secondary-color: #ff7f0e;    /* Orange contrasté */
+    --background-color: #f7f7f7;   /* Fond clair neutre */
+    --text-color: #222222;         /* Gris très foncé, lisible */
     --border-radius: 8px;
     --transition: 0.3s ease;
 }
@@ -50,13 +50,13 @@ h3 {
 
 /* Navigation */
 .navbar {
-    background: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0.5em 1em;
-  font-size: 1em;
-  flex-wrap: wrap;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5em 1em;
+    font-size: 1em;
+    flex-wrap: wrap;
 }
 
 .logo img {
@@ -227,7 +227,7 @@ h3 {
 
 /* footer */
 .footer {
-    background: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
+    background-color: var(--primary-color);
     display: flex;
     justify-content: space-around;
     align-items: center;

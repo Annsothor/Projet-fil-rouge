@@ -1,17 +1,52 @@
-html {
-  color: rgba(131, 77, 145, 1);
+:root {
+    --primary-color: rgb(181, 152, 236);
+    --secondary-color: rgb(131, 77, 145);
+    --background-color: rgb(246, 241, 231);
+    --text-color: rgb(131, 77, 145);
+    --border-radius: 8px;
+    --transition: 0.3s ease;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    color: var(--text-color);
+    scroll-behavior: smooth;}
+
 body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background-color: rgba(246, 241, 231, 1);
-  font-size: 1em;
+    font-family: 'Roboto', sans-serif;    
+    background-color: var(--background-color);
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+h1 {
+    font-family: 'Merriweather', serif;
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0;
+    color: rgba(131, 77, 145, 1);
+}
+
+h2 {
+    font-size: 2rem;
+    color: rgba(131, 77, 145, 1);
+    margin: 1.5rem 0 1rem 0;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: rgba(131, 77, 145, 1);
+    margin-bottom: 1rem;
 }
 
 /* ------------------------- NAVBAR --------------------- */
 .navbar {
-  background: linear-gradient(0deg, rgba(131, 77, 145, 1), rgba(181, 152, 236, 1));
+    background: linear-gradient(0deg, var(--primary-color), var(--secondary-color));
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -28,23 +63,26 @@ body {
 }
 
 .nav-links {
-  display: flex;
-  list-style: none;
-  gap: 1em;
-  flex-wrap: wrap;
-  justify-content: center;
-  margin: 0;
-  padding: 0;
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
 }
 
 .nav-links a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: var(--transition);
+    padding: 0.5rem;
+    border-radius: 4px;
 }
 
-.navbar a:hover {
-  color: #ffd700;
+.nav-links a:hover,
+.nav-links a:focus {
+    color: #ffd700;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 /* -------------------------- CATEGORIES ---------------------- */
